@@ -1,0 +1,8 @@
+version=1
+id=
+title=Popular Drinks
+description=Add popular drinks around the world.
+description=
+description=Please let me know if you want a popular drink from your country.
+tags=
+visibility=public

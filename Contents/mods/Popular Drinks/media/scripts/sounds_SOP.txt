@@ -1,0 +1,12 @@
+module Base
+{
+	sound PopJetEnergyDrink
+	{
+		category = Item,
+        clip
+        {
+            file = media/sound/DrinkSound.ogg,
+            
+        }
+    }
+}

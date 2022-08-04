@@ -1,0 +1,118 @@
+module Base
+{
+	model PopJetEnergyDrink
+	{
+		mesh = JetBottle,
+		texture = Jet,
+	}
+
+    model PopJetEnergyDrink_Ground
+    {
+        mesh = WorldItems/JetBottle,
+        texture = Jet,
+        scale = 0.01,
+    }
+
+    model PopJetEnergyDrinkBottleEmpty_Ground
+    {
+        mesh = WorldItems/JetBottle,
+        texture = JetEmpty,
+        scale = 0.01,
+    }
+
+	model PopJetEnergyDrinkWaterBottle_Ground
+	{
+        mesh = WorldItems/JetBottle,
+        texture = JetWater,
+        scale = 0.01,
+	}
+
+	model PopCacique
+	{
+		mesh = CaciqueBottle,
+		texture = Cacique,
+	}
+
+    model PopCacique_Ground
+    {
+        mesh = WorldItems/CaciqueBottle,
+        texture = Cacique,
+    }
+
+	model PopPachaConJet
+	{
+		mesh = CaciqueBottle,
+		texture = PachaConJet,
+	}
+
+    model PopPachaConJet_Ground
+    {
+        mesh = WorldItems/CaciqueBottle,
+        texture = PachaConJet,
+    }
+
+	model PopFrescolecheVanillaBox
+	{
+		mesh = FrescolecheBox,
+		texture = FrescolecheVanilla,
+	}
+
+    model PopFrescolecheVanillaBox_Ground
+    {
+        mesh = WorldItems/FrescolecheBox,
+        texture = FrescolecheVanilla,
+        scale = 0.01,
+    }
+
+	model PopFrescolecheStrawberryBox
+	{
+		mesh = FrescolecheBox,
+		texture = FrescolecheStrawberry,
+	}
+
+    model PopFrescolecheStrawberryBox_Ground
+    {
+        mesh = WorldItems/FrescolecheBox,
+        texture = FrescolecheStrawberry,
+        scale = 0.01,
+    }
+
+	model PopFrescolecheChocolateBox
+	{
+		mesh = FrescolecheBox,
+		texture = FrescolecheChocolate,
+	}
+
+    model PopFrescolecheChocolateBox_Ground
+    {
+        mesh = WorldItems/FrescolecheBox,
+        texture = FrescolecheChocolate,
+        scale = 0.01,
+    }
+
+	model PopRedBull
+	{
+		mesh = RedbullCan,
+		texture = Redbull,
+	}
+
+    model PopRedBull_Ground
+    {
+        mesh = WorldItems/RedbullCan,
+        texture = Redbull,
+        scale = 0.01,
+    }
+    
+	model PopIrnBru
+	{
+		mesh = IrnbruCan,
+		texture = Irnbru,
+	}
+
+    model PopIrnBru_Ground
+    {
+        mesh = WorldItems/IrnbruCan,
+        texture = Irnbru,
+        scale = 0.01,
+    }
+}

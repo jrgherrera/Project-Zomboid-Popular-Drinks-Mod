@@ -1,0 +1,12 @@
+ItemName_EN = {
+	
+	ItemName_Base.PopJetEnergyDrink = "Jet Energy Drink",
+	ItemName_Base.PopJetEnergyDrinkBottleEmpty = "Jet Energy Drink Empty Bottle",
+	ItemName_Base.PopJetEnergyDrinkWaterBottle = "Jet Bottle with water",
+	ItemName_Base.PopFrescolecheVanillaBox = "Vanilla Frescoleche",
+	ItemName_Base.PopFrescolecheStrawberryBox = "Strawberry Frescoleche",
+	ItemName_Base.PopFrescolecheChocolateBox = "Chocolate Frescoleche",
+	ItemName_Base.PopCacique = "Cacique",
+	ItemName_Base.PopPachaConJet = "Pacha with Jet",
+
+}

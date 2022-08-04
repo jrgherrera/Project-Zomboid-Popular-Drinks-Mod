@@ -1,0 +1,28 @@
+module PopularDrinks
+{
+    imports
+    {
+        Base
+    }
+
+	recipe Make Pacha con Jet
+	{
+	   	PopularDrinks.PopJetEnergyDrink,
+	   	PopularDrinks.PopCacique, 
+
+	   	Result: PopularDrinks.PopPachaConJet,
+	   	Sound: AddItemInBeverage,
+	   	Time: 15.0,
+        Category: Cooking,
+	}
+
+    recipe Smash Cacique Bottle
+    {
+        PopularDrinks.PopCaciqueEmpty,
+
+        Result:SmashedBottle,
+        Time:20,
+        Sound:BreakGlassItem,
+    }
+
+}
