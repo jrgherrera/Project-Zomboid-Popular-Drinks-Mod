@@ -1,0 +1,11 @@
+IGUI_EN = {
+
+	IGUI_POP_Jet = "Jet Bebida Energetica",
+	IGUI_POP_Cacique = "Guaro Cacique",
+	IGUI_POP_FLVanilla = "Frescoleche de Vainilla",
+	IGUI_POP_FLStrawberry = "Frescoleche de Fresa",
+	IGUI_POP_FLChocolate = "Frescoleche de Chocolate",
+	IGUI_POP_IrnBru = "Irn-Bru",
+	IGUI_POP_Redbull = "Red Bull",
+	IGUI_POP_Jet_tooltip = "Posibilidad de encontrar objecto en loot",
+}

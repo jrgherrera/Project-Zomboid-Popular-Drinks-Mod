@@ -1,0 +1,11 @@
+IGUI_EN = {
+
+	IGUI_POP_Jet = "Jet Energy Drink",
+	IGUI_POP_Cacique = "Cacique Liquor Bottle",
+	IGUI_POP_FLVanilla = "Vanilla Frescoleche",
+	IGUI_POP_FLStrawberry = "Strawberry Frescoleche",
+	IGUI_POP_FLChocolate = "Chocolate Frescoleche",
+	IGUI_POP_IrnBru = "Irn-Bru",
+	IGUI_POP_Redbull = "Red Bull",
+	IGUI_POP_tooltip = "Chances to see item in loot",
+}

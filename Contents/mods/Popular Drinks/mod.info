@@ -3,3 +3,4 @@ id=PopularDrinks
 description=Popular Drinks Around the World
 poster=preview.png
 icon=icon.png
+require=modoptions
