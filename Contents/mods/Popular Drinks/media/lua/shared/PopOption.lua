@@ -1,5 +1,3 @@
-local config = {};
-
 local SETTINGS = {
     options_data = {
         jetdropdown = {
@@ -98,52 +96,57 @@ local SETTINGS = {
     mod_shortname= "Popular Drinks",
 }
 
-local function getNormalizedValue(value)
-    local frequency = 0
+if ModOptions and ModOptions.getInstance then
+    print("POP: ModOptions is avaliable - trying to load the data");
+    local settings = ModOptions:getInstance(SETTINGS);
 
-    if value > 1 then
-        frequency = 0.16666666666666668 * value
+    local jetdropdown = settings:getData("jetdropdown");
+    local caciquedropdown = settings:getData("caciquedropdown");
+    local flvanilladropdown = settings:getData("flvanilladropdown");
+    local flstrawberrydropdown = settings:getData("flstrawberrydropdown");
+    local flchocolatedropdown = settings:getData("flchocolatedropdown");
+    local irnbrudropdown = settings:getData("irnbrudropdown");
+    local redbulldropdown = settings:getData("redbulldropdown");
+
+    if isClient() then
+        jetdropdown.sandbox_path = "worldoptions";
+        caciquedropdown.sandbox_path = "worldoptions";
+        flvanilladropdown.sandbox_path = "worldoptions";
+        flstrawberrydropdown.sandbox_path = "worldoptions";
+        flchocolatedropdown.sandbox_path = "worldoptions";
+        irnbrudropdown.sandbox_path = "worldoptions";
+        redbulldropdown.sandbox_path = "worldoptions";
     end
 
-    if frequency > 1 then
-        frequency = 1
+    function jetdropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
     end
 
-    return frequency
-
-end
-
-local function setupConfig()
-    config.jetdropdown = getNormalizedValue(tonumber(SETTINGS.options.jetdropdown));
-    config.caciquedropdown = getNormalizedValue(tonumber(SETTINGS.options.caciquedropdown));
-    config.flvanilladropdown = getNormalizedValue(tonumber(SETTINGS.options.flvanilladropdown));
-    config.flstrawberrydropdown = getNormalizedValue(tonumber(SETTINGS.options.flstrawberrydropdown));
-    config.flchocolatedropdown = getNormalizedValue(tonumber(SETTINGS.options.flchocolatedropdown));
-    config.irnbrudropdown = getNormalizedValue(tonumber(SETTINGS.options.irnbrudropdown));
-    config.redbulldropdown = getNormalizedValue(tonumber(SETTINGS.options.redbulldropdown));
-end
-
-local function triggerConfigLoad()
-    if ModOptions and ModOptions.getInstance then
-        print("POP - ModOptions is avaliable - trying to load the data");
-        local settings = ModOptions:getInstance(SETTINGS);
-
-        function settings:OnApply()
-            setupConfig();
-        end
-
-        ModOptions:loadFile();
-
-        setupConfig();
-
+    function caciquedropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
     end
+
+    function flvanilladropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
+    end
+
+    function flstrawberrydropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
+    end
+
+    function flchocolatedropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
+    end
+
+    function irnbrudropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
+    end
+
+    function redbulldropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
+    end
+
+    POPULARDRINKS = {}
+    POPULARDRINKS.OPTIONS = SETTINGS;
+
 end
-
-triggerConfigLoad();
-
-config.triggerConfigLoad = triggerConfigLoad;
-
-POPULARDRINKS = {}
-POPULARDRINKS.CONFIG = config;
-
-return config;
