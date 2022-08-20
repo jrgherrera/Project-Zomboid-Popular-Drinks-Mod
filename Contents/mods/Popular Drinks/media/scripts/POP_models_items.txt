@@ -1,10 +1,10 @@
 module Base
 {
-	model PopJetEnergyDrink
-	{
-		mesh = JetBottle,
-		texture = Jet,
-	}
+    model PopJetEnergyDrink
+    {
+        mesh = JetBottle,
+        texture = Jet,
+    }
 
     model PopJetEnergyDrink_Ground
     {
@@ -20,18 +20,18 @@ module Base
         scale = 0.01,
     }
 
-	model PopJetEnergyDrinkWaterBottle_Ground
-	{
+    model PopJetEnergyDrinkWaterBottle_Ground
+    {
         mesh = WorldItems/JetBottle,
         texture = JetWater,
         scale = 0.01,
-	}
+    }
 
-	model PopCacique
-	{
-		mesh = CaciqueBottle,
-		texture = Cacique,
-	}
+    model PopCacique
+    {
+        mesh = CaciqueBottle,
+        texture = Cacique,
+    }
 
     model PopCacique_Ground
     {
@@ -39,11 +39,11 @@ module Base
         texture = Cacique,
     }
 
-	model PopPachaConJet
-	{
-		mesh = CaciqueBottle,
-		texture = PachaConJet,
-	}
+    model PopPachaConJet
+    {
+        mesh = CaciqueBottle,
+        texture = PachaConJet,
+    }
 
     model PopPachaConJet_Ground
     {
@@ -51,11 +51,11 @@ module Base
         texture = PachaConJet,
     }
 
-	model PopFrescolecheVanillaBox
-	{
-		mesh = FrescolecheBox,
-		texture = FrescolecheVanilla,
-	}
+    model PopFrescolecheVanillaBox
+    {
+        mesh = FrescolecheBox,
+        texture = FrescolecheVanilla,
+    }
 
     model PopFrescolecheVanillaBox_Ground
     {
@@ -64,11 +64,11 @@ module Base
         scale = 0.01,
     }
 
-	model PopFrescolecheStrawberryBox
-	{
-		mesh = FrescolecheBox,
-		texture = FrescolecheStrawberry,
-	}
+    model PopFrescolecheStrawberryBox
+    {
+        mesh = FrescolecheBox,
+        texture = FrescolecheStrawberry,
+    }
 
     model PopFrescolecheStrawberryBox_Ground
     {
@@ -77,11 +77,11 @@ module Base
         scale = 0.01,
     }
 
-	model PopFrescolecheChocolateBox
-	{
-		mesh = FrescolecheBox,
-		texture = FrescolecheChocolate,
-	}
+    model PopFrescolecheChocolateBox
+    {
+        mesh = FrescolecheBox,
+        texture = FrescolecheChocolate,
+    }
 
     model PopFrescolecheChocolateBox_Ground
     {
@@ -90,11 +90,11 @@ module Base
         scale = 0.01,
     }
 
-	model PopRedBull
-	{
-		mesh = RedbullCan,
-		texture = Redbull,
-	}
+    model PopRedBull
+    {
+        mesh = RedbullCan,
+        texture = Redbull,
+    }
 
     model PopRedBull_Ground
     {
@@ -103,16 +103,94 @@ module Base
         scale = 0.01,
     }
     
-	model PopIrnBru
-	{
-		mesh = IrnbruCan,
-		texture = Irnbru,
-	}
+    model PopIrnBru
+    {
+        mesh = IrnbruCan,
+        texture = Irnbru,
+    }
 
     model PopIrnBru_Ground
     {
         mesh = WorldItems/IrnbruCan,
         texture = Irnbru,
+        scale = 0.01,
+    }
+    
+    model PopJarritosTangerine
+    {
+        mesh = JarritosBottle,
+        texture = JarritosTangerine,
+    }
+
+    model PopJarritosTangerine_Ground
+    {
+        mesh = WorldItems/JarritosBottle,
+        texture = JarritosTangerine,
+        scale = 0.01,
+    }
+    
+    model PopJarritosWatermelon
+    {
+        mesh = JarritosBottle,
+        texture = JarritosWatermelon,
+    }
+
+    model PopJarritosWatermelon_Ground
+    {
+        mesh = WorldItems/JarritosBottle,
+        texture = JarritosWatermelon,
+        scale = 0.01,
+    }
+    
+    model PopJarritosLime
+    {
+        mesh = JarritosBottle,
+        texture = JarritosLime,
+    }
+
+    model PopJarritosLime_Ground
+    {
+        mesh = WorldItems/JarritosBottle,
+        texture = JarritosLime,
+        scale = 0.01,
+    }
+    
+    model PopJarritosGuava
+    {
+        mesh = JarritosBottle,
+        texture = JarritosGuava,
+    }
+
+    model PopJarritosGuava_Ground
+    {
+        mesh = WorldItems/JarritosBottle,
+        texture = JarritosGuava,
+        scale = 0.01,
+    }
+    
+    model PopCorona
+    {
+        mesh = JarritosBottle,
+        texture = Corona,
+    }
+
+    model PopCorona_Ground
+    {
+        mesh = WorldItems/JarritosBottle,
+        texture = Corona,
+        scale = 0.01,
+    }
+    
+    model PopCoronaMichelada
+    {
+        mesh = JarritosBottle,
+        texture = CoronaMichelada,
+    }
+
+    model PopCoronaMichelada_Ground
+    {
+        mesh = WorldItems/JarritosBottle,
+        texture = CoronaMichelada,
         scale = 0.01,
     }
 }

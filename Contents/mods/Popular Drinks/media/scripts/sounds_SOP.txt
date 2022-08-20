@@ -9,4 +9,14 @@ module Base
             
         }
     }
+
+	sound PopDrinkPrepare
+	{
+		category = Item,
+        clip
+        {
+            file = media/sound/DrinkPrepare.ogg,
+            
+        }
+    }
 }

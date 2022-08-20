@@ -5,16 +5,16 @@ module PopularDrinks
         Base
     }
 
-	recipe Make Pacha con Jet
-	{
-	   	PopularDrinks.PopJetEnergyDrink,
-	   	PopularDrinks.PopCacique, 
+    recipe Make Pacha con Jet
+    {
+        PopularDrinks.PopJetEnergyDrink,
+        PopularDrinks.PopCacique, 
 
-	   	Result: PopularDrinks.PopPachaConJet,
-	   	Sound: AddItemInBeverage,
-	   	Time: 15.0,
+        Result: PopularDrinks.PopPachaConJet,
+        Sound: AddItemInBeverage,
+        Time: 15.0,
         Category: Cooking,
-	}
+    }
 
     recipe Smash Cacique Bottle
     {
@@ -23,6 +23,17 @@ module PopularDrinks
         Result:SmashedBottle,
         Time:20,
         Sound:BreakGlassItem,
+    }
+
+    recipe Make Corona Michelada
+    {
+        PopularDrinks.PopCorona,
+        Base.Lime,
+        Base.Salt,
+
+        Result: PopularDrinks.PopCoronaMichelada,
+        Time: 35,
+        Sound: PopDrinkPrepare,
     }
 
 }

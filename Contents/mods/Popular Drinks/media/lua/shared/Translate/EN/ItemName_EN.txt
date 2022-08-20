@@ -8,5 +8,11 @@ ItemName_EN = {
 	ItemName_Base.PopFrescolecheChocolateBox = "Chocolate Frescoleche",
 	ItemName_Base.PopCacique = "Cacique",
 	ItemName_Base.PopPachaConJet = "Pacha with Jet",
+	ItemName_Base.PopJarritosTangerine = "Jarritos Tangerine",
+	ItemName_Base.PopJarritosWatermelon = "Jarritos Watermelon",
+	ItemName_Base.PopJarritosGuava = "Jarritos Guava",
+	ItemName_Base.PopJarritosLime = "Jarritos Lime",
+	ItemName_Base.PopCorona = "Corona",
+	ItemName_Base.PopCoronaMichelada = "Corona Michelada",
 
 }
