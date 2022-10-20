@@ -153,6 +153,40 @@ local SETTINGS = {
             default = 6,
             OnApplyInGame= OnApply
         },
+        incakoladropdown = {
+            "REMOVE",
+            "10%",
+            "20%",
+            "30%",
+            "40%",
+            "50%",
+            "60%",
+            "70%",
+            "80%",
+            "90%",
+            "99%",
+            name = "IGUI_POP_IncaKola",
+            tooltip = "IGUI_POP_tooltip",
+            default = 6,
+            OnApplyInGame= OnApply
+        },
+        ponymaltadropdown = {
+            "REMOVE",
+            "10%",
+            "20%",
+            "30%",
+            "40%",
+            "50%",
+            "60%",
+            "70%",
+            "80%",
+            "90%",
+            "99%",
+            name = "IGUI_POP_PonyMalta",
+            tooltip = "IGUI_POP_tooltip",
+            default = 6,
+            OnApplyInGame= OnApply
+        },
     },
     mod_id = "PopularDrinks",
     mod_shortname= "Popular Drinks",
@@ -171,6 +205,8 @@ if ModOptions and ModOptions.getInstance then
     local redbulldropdown = settings:getData("redbulldropdown");
     local jarritosdropdown = settings:getData("jarritosdropdown");
     local coronadropdown = settings:getData("coronadropdown");
+    local incakoladropdown = settings:getData("incakoladropdown");
+    local ponymaltadropdown = settings:getData("ponymaltadropdown");
 
     if isClient() then
         jetdropdown.sandbox_path = "worldoptions";
@@ -182,6 +218,8 @@ if ModOptions and ModOptions.getInstance then
         redbulldropdown.sandbox_path = "worldoptions";
         jarritosdropdown.sandbox_path = "worldoptions";
         coronadropdown.sandbox_path = "worldoptions";
+        incakoladropdown.sandbox_path = "worldoptions";
+        ponymaltadropdown.sandbox_path = "worldoptions";
     end
 
     function jetdropdown:OnApplyInGame(val)
@@ -217,6 +255,14 @@ if ModOptions and ModOptions.getInstance then
     end
 
     function coronadropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
+    end
+
+    function incakoladropdown:OnApplyInGame(val)
+        print("POP: Option is updated", self.id, val)
+    end
+
+    function ponymaltadropdown:OnApplyInGame(val)
         print("POP: Option is updated", self.id, val)
     end
 

@@ -29,6 +29,8 @@ local irnbrudropdown = 0;
 local redbulldropdown = 0;
 local jarritosdropdown = 0;
 local coronadropdown = 0;
+local incakoladropdown = 0;
+local ponymaltadropdown = 0;
 
 if ModOptions and ModOptions.getInstance then
     print("POP: Mopdoptions detected in distribution file", POPULARDRINKS.OPTIONS)
@@ -43,6 +45,8 @@ if ModOptions and ModOptions.getInstance then
     redbulldropdown = getNormalizedValue(POPULARDRINKS.OPTIONS.options.redbulldropdown);
     jarritosdropdown = getNormalizedValue(POPULARDRINKS.OPTIONS.options.jarritosdropdown);
     coronadropdown = getNormalizedValue(POPULARDRINKS.OPTIONS.options.coronadropdown);
+    incakoladropdown = getNormalizedValue(POPULARDRINKS.OPTIONS.options.incakoladropdown);
+    ponymaltadropdown = getNormalizedValue(POPULARDRINKS.OPTIONS.options.ponymaltadropdown);
 
     print("POP: Distribution | jetdropdown", jetdropdown);
     print("POP: Distribution | caciquedropdown", caciquedropdown);
@@ -53,6 +57,8 @@ if ModOptions and ModOptions.getInstance then
     print("POP: Distribution | redbulldropdown", redbulldropdown);
     print("POP: Distribution | jarritosdropdown", jarritosdropdown);
     print("POP: Distribution | coronadropdown", coronadropdown);
+    print("POP: Distribution | incakoladropdown", incakoladropdown);
+    print("POP: Distribution | ponymaltadropdown", ponymaltadropdown);
 end
 
 require 'Items/Distributions'
@@ -63,6 +69,10 @@ table.insert(ProceduralDistributions.list["FridgeGeneric"].items, "PopularDrinks
 table.insert(ProceduralDistributions.list["FridgeGeneric"].items, getDistributionValue(jetdropdown, 20));
 table.insert(ProceduralDistributions.list["FridgeGeneric"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["FridgeGeneric"].items, getDistributionValue(irnbrudropdown, 12));
+table.insert(ProceduralDistributions.list["FridgeGeneric"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["FridgeGeneric"].items, getDistributionValue(incakoladropdown, 12));
+table.insert(ProceduralDistributions.list["FridgeGeneric"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["FridgeGeneric"].items, getDistributionValue(ponymaltadropdown, 12));
 table.insert(ProceduralDistributions.list["FridgeGeneric"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["FridgeGeneric"].items, getDistributionValue(jarritosdropdown, 12));
 table.insert(ProceduralDistributions.list["FridgeGeneric"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -89,6 +99,10 @@ table.insert(ProceduralDistributions.list["Locker"].items, "PopularDrinks.PopJet
 table.insert(ProceduralDistributions.list["Locker"].items, getDistributionValue(jetdropdown, 16));
 table.insert(ProceduralDistributions.list["Locker"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["Locker"].items,  getDistributionValue(irnbrudropdown, 16));
+table.insert(ProceduralDistributions.list["Locker"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["Locker"].items, getDistributionValue(incakoladropdown, 16));
+table.insert(ProceduralDistributions.list["Locker"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["Locker"].items, getDistributionValue(ponymaltadropdown, 16));
 table.insert(ProceduralDistributions.list["Locker"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["Locker"].items, getDistributionValue(jarritosdropdown, 16));
 table.insert(ProceduralDistributions.list["Locker"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -113,6 +127,10 @@ table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, "Popular
 table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, getDistributionValue(jetdropdown, 16));
 table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items,  getDistributionValue(irnbrudropdown, 12));
+table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, getDistributionValue(incakoladropdown, 12));
+table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, getDistributionValue(ponymaltadropdown, 12));
 table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, getDistributionValue(jarritosdropdown, 12));
 table.insert(ProceduralDistributions.list["BakeryKitchenFridge"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -155,6 +173,10 @@ table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "PopularDrin
 table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, getDistributionValue(redbulldropdown, 12));
 table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, getDistributionValue(irnbrudropdown, 12));
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, getDistributionValue(incakoladropdown, 12));
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, getDistributionValue(ponymaltadropdown, 12));
 table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, getDistributionValue(jarritosdropdown, 12));
 table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -177,6 +199,10 @@ table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, "PopularDrink
 table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, getDistributionValue(redbulldropdown, 8));
 table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, getDistributionValue(irnbrudropdown, 8));
+table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, getDistributionValue(incakoladropdown, 8));
+table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, getDistributionValue(ponymaltadropdown, 8));
 table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, getDistributionValue(jarritosdropdown, 4));
 table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -201,6 +227,10 @@ table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "PopularD
 table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, getDistributionValue(redbulldropdown, 16));
 table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, getDistributionValue(irnbrudropdown, 12));
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, getDistributionValue(incakoladropdown, 12));
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, getDistributionValue(ponymaltadropdown, 12));
 table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, getDistributionValue(jarritosdropdown, 6));
 table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -225,6 +255,10 @@ table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "PopularDrin
 table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, getDistributionValue(redbulldropdown, 7));
 table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, getDistributionValue(irnbrudropdown, 7));
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, getDistributionValue(incakoladropdown, 7));
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, getDistributionValue(ponymaltadropdown, 7));
 table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, getDistributionValue(jarritosdropdown, 6));
 table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -249,6 +283,10 @@ table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "PopularDri
 table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, getDistributionValue(redbulldropdown, 16));
 table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, getDistributionValue(irnbrudropdown, 16));
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, getDistributionValue(incakoladropdown, 16));
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, getDistributionValue(ponymaltadropdown, 16));
 table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, getDistributionValue(jarritosdropdown, 12));
 table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -293,6 +331,10 @@ table.insert(ProceduralDistributions.list["FridgeOther"].items, "PopularDrinks.P
 table.insert(ProceduralDistributions.list["FridgeOther"].items, getDistributionValue(redbulldropdown, 20));
 table.insert(ProceduralDistributions.list["FridgeOther"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["FridgeOther"].items, getDistributionValue(irnbrudropdown, 16));
+table.insert(ProceduralDistributions.list["FridgeOther"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["FridgeOther"].items, getDistributionValue(incakoladropdown, 16));
+table.insert(ProceduralDistributions.list["FridgeOther"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["FridgeOther"].items, getDistributionValue(ponymaltadropdown, 16));
 table.insert(ProceduralDistributions.list["FridgeOther"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(ProceduralDistributions.list["FridgeOther"].items, getDistributionValue(jarritosdropdown, 4));
 table.insert(ProceduralDistributions.list["FridgeOther"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -343,6 +385,10 @@ table.insert(ProceduralDistributions.list["FridgeSoda"].items, "PopularDrinks.Po
 table.insert(ProceduralDistributions.list["FridgeSoda"].items, getDistributionValue(jetdropdown, 20));
 table.insert(ProceduralDistributions.list["FridgeSoda"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["FridgeSoda"].items, getDistributionValue(irnbrudropdown, 12));
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, getDistributionValue(incakoladropdown, 12));
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, getDistributionValue(ponymaltadropdown, 12));
 table.insert(ProceduralDistributions.list["FridgeSoda"].items, "PopularDrinks.PopRedBull");
 table.insert(ProceduralDistributions.list["FridgeSoda"].items, getDistributionValue(redbulldropdown, 12));
 
@@ -425,6 +471,10 @@ table.insert(ProceduralDistributions.list["MotelFridge"].items, "PopularDrinks.P
 table.insert(ProceduralDistributions.list["MotelFridge"].items, getDistributionValue(redbulldropdown, 16));
 table.insert(ProceduralDistributions.list["MotelFridge"].items, "PopularDrinks.PopIrnBru");
 table.insert(ProceduralDistributions.list["MotelFridge"].items, getDistributionValue(irnbrudropdown, 16));
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "PopularDrinks.PopIncaKola");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, getDistributionValue(incakoladropdown, 16));
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "PopularDrinks.PopPonyMalta");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, getDistributionValue(ponymaltadropdown, 16));
 
 -- Whiskey Bottling
 table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, "PopularDrinks.PopCacique");
@@ -437,6 +487,10 @@ table.insert(SuburbsDistributions["all"]["vendingpop"].items, "PopularDrinks.Pop
 table.insert(SuburbsDistributions["all"]["vendingpop"].items, getDistributionValue(redbulldropdown, 10));
 table.insert(SuburbsDistributions["all"]["vendingpop"].items, "PopularDrinks.PopIrnBru");
 table.insert(SuburbsDistributions["all"]["vendingpop"].items, getDistributionValue(irnbrudropdown, 6));
+table.insert(SuburbsDistributions["all"]["vendingpop"].items, "PopularDrinks.PopIncaKola");
+table.insert(SuburbsDistributions["all"]["vendingpop"].items, getDistributionValue(incakoladropdown, 6));
+table.insert(SuburbsDistributions["all"]["vendingpop"].items, "PopularDrinks.PopPonyMalta");
+table.insert(SuburbsDistributions["all"]["vendingpop"].items, getDistributionValue(ponymaltadropdown, 6));
 table.insert(SuburbsDistributions["all"]["vendingpop"].items, "PopularDrinks.PopJarritosTangerine");
 table.insert(SuburbsDistributions["all"]["vendingpop"].items, getDistributionValue(jarritosdropdown, 6));
 table.insert(SuburbsDistributions["all"]["vendingpop"].items, "PopularDrinks.PopJarritosWatermelon");
@@ -453,6 +507,10 @@ table.insert(SuburbsDistributions["all"]["inventorymale"].items, "PopularDrinks.
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, getDistributionValue(caciquedropdown, 1));
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, "PopularDrinks.PopIrnBru");
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, getDistributionValue(irnbrudropdown, 8));
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "PopularDrinks.PopIncaKola");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, getDistributionValue(incakoladropdown, 6));
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "PopularDrinks.PopPonyMalta");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, getDistributionValue(ponymaltadropdown, 6));
 
 -- Inventory Female
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "PopularDrinks.PopFrescolecheVanillaBox");
@@ -461,8 +519,10 @@ table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "PopularDrink
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, getDistributionValue(flstrawberrydropdown, 12));
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "PopularDrinks.PopFrescolecheChocolateBox");
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, getDistributionValue(flchocolatedropdown, 12));
-table.insert(SuburbsDistributions["all"]["inventorymale"].items, "PopularDrinks.PopCacique");
-table.insert(SuburbsDistributions["all"]["inventorymale"].items, getDistributionValue(caciquedropdown, 1));
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "PopularDrinks.PopCacique");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, getDistributionValue(caciquedropdown, 1));
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "PopularDrinks.PopPonyMalta");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, getDistributionValue(ponymaltadropdown, 3));
 
 -- Motel Room Occupied
 table.insert(SuburbsDistributions["motelroomoccupied"]["sidetable"].items, "PopularDrinks.PopCacique");

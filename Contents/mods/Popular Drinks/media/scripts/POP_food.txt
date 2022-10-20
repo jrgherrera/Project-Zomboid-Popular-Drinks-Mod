@@ -383,4 +383,49 @@ module PopularDrinks
 		Tags = LowAlcohol,
     }
 
+    item PopIncaKola
+    {
+		DisplayName = Inca Kola,
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.8,
+        Icon = IncaKola,
+        CantBeFrozen = TRUE,
+        EatType = bottle,
+        Packaged = TRUE,
+        HungerChange = -6,
+        ThirstChange = -55,
+        UnhappyChange = -10,
+        Calories = 400,
+        Lipids = 0,
+        Proteins = 0,
+        CustomContextMenu = Drink,
+        CustomEatSound = PopJetEnergyDrink,
+        StaticModel = PopIncaKola,
+        WorldStaticModel = PopIncaKola_Ground,
+    }
+
+    item PopPonyMalta
+    {
+		DisplayName = Pony Malta,
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.8,
+        Icon = PonyMalta,
+        CantBeFrozen = TRUE,
+        EatType = bottle,
+        Packaged = TRUE,
+        HungerChange = -8,
+        ThirstChange = -35,
+        UnhappyChange = -10,
+        FatigueChange = -10,
+        Calories = 450,
+        Lipids = 0,
+        Proteins = 0,
+        CustomContextMenu = Drink,
+        CustomEatSound = DrinkingFromBottleGlass,
+        StaticModel = PopPonyMalta,
+        WorldStaticModel = PopPonyMalta_Ground,
+    }
+
 }

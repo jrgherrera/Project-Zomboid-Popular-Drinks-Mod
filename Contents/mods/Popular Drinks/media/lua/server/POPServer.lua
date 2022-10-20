@@ -14,6 +14,8 @@ Events.OnGameStart.Add(function()
         print("POP: redbulldropdown", POPULARDRINKS.OPTIONS.options.redbulldropdown);
         print("POP: jarritos", POPULARDRINKS.OPTIONS.options.jarritosdropdown);
         print("POP: corona", POPULARDRINKS.OPTIONS.options.coronadropdown);
+        print("POP: inca kola", POPULARDRINKS.OPTIONS.options.incakoladropdown);
+        print("POP: pony malta", POPULARDRINKS.OPTIONS.options.ponymaltadropdown);
 
     end
 end)

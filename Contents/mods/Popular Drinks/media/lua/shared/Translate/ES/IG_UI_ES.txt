@@ -9,5 +9,7 @@ IGUI_EN = {
 	IGUI_POP_Redbull = "Red Bull",
 	IGUI_POP_Jarritos = "Jarritos",
 	IGUI_POP_Corona = "Corona",
+	IGUI_POP_IncaKola = "Inca Kola",
+	IGUI_POP_PonyMalta = "Pony Malta",
 	IGUI_POP_Jet_tooltip = "Posibilidad de encontrar objecto en loot",
 }

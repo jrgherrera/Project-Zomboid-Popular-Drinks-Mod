@@ -14,5 +14,7 @@ ItemName_EN = {
 	ItemName_Base.PopJarritosLime = "Jarritos Lime",
 	ItemName_Base.PopCorona = "Corona",
 	ItemName_Base.PopCoronaMichelada = "Corona Michelada",
+	ItemName_Base.PopIncaKola = "Inca Kola",
+	ItemName_Base.PopPonyMalta = "Pony Malta",
 
 }

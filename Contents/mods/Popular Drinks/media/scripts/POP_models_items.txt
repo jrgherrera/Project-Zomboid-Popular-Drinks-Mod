@@ -193,4 +193,29 @@ module Base
         texture = CoronaMichelada,
         scale = 0.01,
     }
+    
+    model PopIncaKola
+    {
+        mesh = IncaKolaBottle,
+        texture = IncaKola,
+    }
+
+    model PopIncaKola_Ground
+    {
+        mesh = WorldItems/IncaKolaBottle,
+        texture = IncaKola,
+    }
+    
+    model PopPonyMalta
+    {
+        mesh = JarritosBottle,
+        texture = PonyMalta,
+    }
+
+    model PopPonyMalta_Ground
+    {
+        mesh = WorldItems/JarritosBottle,
+        texture = PonyMalta,,
+        scale = 0.01,
+    }
 }

@@ -1,10 +1,14 @@
-version=1.2
-id=2840107597
-title=Popular Drinks
+version=1.3
+name=Popular Drinks
+id=PopularDrinks
+
+icon=icon.png
+description=[h1]Popular Drinks[/h1]
+description=
 description=Add popular drinks around the world.
 description=Please let me know if you want a popular drink from your country.
 description=
-description=Current drinks
+description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 description=
 description=From Around the world:
 description=- Red Bull
@@ -21,6 +25,16 @@ description=From Mexico:
 description=- Jarritos
 description=- Corona
 description=
-description=Soon more drinks, Inca Cola (from Peru) and Pony Malta (Colombia, Bundaberg (Australia).
+description=From Colombia:
+description=- Pony Malta
+description=
+description=From Peru:
+description=- Inca Kola
+description=
+description=Soon more drinks Arizona, Bundaberg (Australia), L&P (New Zealand).
+description=
+description=If you want to contribute, just leave a comment or reach out to me in PZ discord.
+description=
+description=[url=http://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36478][img=http://projectzomboid.com/images/MODS_03.png][/url]
+pzversion=41
 tags=Build 41;Food;Silly/Fun
-visibility=public
